@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
-from lib.classes.models import Base, Fornecedor, Produto
+from lib.classes.Models import Base, Fornecedor, Produto
 
 engine = create_engine('sqlite:///meubanco_desafio.db')
 Base.metadata.create_all(engine)
